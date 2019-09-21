@@ -1,45 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-	<title>flex menu</title>
-	<script src="https://kit.fontawesome.com/1201d2855e.js"></script>
+	<title>쏭쏭뮤직</title>
+	<meta charset="utf-8">
+	<meta name="description" content="오감,오르프,우크렐레">
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" name="viewport">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-	<link rel="stylesheet" href="flexmenu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script>
+	    $(document).ready(function(){
+	      $('.slider').bxSlider({
+	      	auto: true,
+			autoControls: true,
+			stopAutoOnClick: true,
+			pager: true,
+	      });
+	    });
+  </script>
+
+
 </head>
 <body>
-	<div class="wrapper">
-		<input type="checkbox" id="open_menu" class="open_menu">
-		<label class="burger" for="open_menu"><i class="xi-bars"></i></label>
-		<nav>
-			<div class="menu_item">
-				<a href="#">
-					<i class="xi-telegram"></i>
-					<span>Telegram</span>
-				</a>
-			</div>
+	<a href="#contents" class="skip">본문 바로 가기</a>
 
-			<div class="menu_item">
-				<a href="#">
-					<i class="xi-amazon"></i>
-					<span>Amazon</span>
-				</a>
-			</div>
+	<header>
+	<h1><a href="#">JUSETFOG</a></h1>
 
-			<div class="menu_item">
-				<a href="#">
-					<i class="xi-blogger"></i>
-					<span>Blogger</span>
-				</a>
-			</div>
+	<h2 class="hide">메인 메뉴</h2>
+	<nav class="gnb">
+		<ul>
+			<li><a href="#">쑥쑥 요리</a></li>
+			<li><a href="#">찾아가는 오감</a></li>
+			<li><a href="#">오감 - 오르프</a></li>
+			<li><a href="#"Support>우크렐레 - 오카리나</a></li>
+			<li><a href="#">세시풍속</a></li>
+		</ul>
+	</nav>
+	<h2 class="hide">전체 메뉴</h2>
+	<a href="#" class="btn_all_menu">
+		<input type="checkbox" id="menuicon">
+		<label for="menuicon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+	</a>
+	</header>
 
-			<div class="menu_item">
-				<a href="#">
-					<i class="xi-medium"></i>
-					<span>Medium</span>
-				</a>
-			</div>
-		</nav>
+	<section class="visual">
+	<h2 class="hide">광고 영력</h2>
+
+	<div class="slider">
+		<img src="images/song_visual1.jpg">
+		<img src="images/song_visual2.jpg">
+		<img src="images/song_visual1.jpg">
+		<img src="images/song_visual3.jpg">
 	</div>
+	</div>
+	</section>	
+
+<!-- 			
+			
+	<div class="content">	
+		<section class="cooking">
+			<h2 class="hide">컨텐츠 영역1</h2>
+			<h1 class="title">쑥쑥 요리</h1>
+			<h2 class="hide">컨텐츠 이미지</h2>
+			<img src="images/song_visual3.jpg">
+		</section>
+
+		<section class="Product">
+			<h2>컨텐츠 영역2</h2>
+		</section>
+
+		<section class="Distribtion">
+			<h2>컨텐츠 영역3</h2>
+		</section>
+
+		<section class="Support">
+			<h2>컨텐츠 영역4</h2>
+		</section>
+
+		<section class="Authenticity">
+			<h2>컨텐츠 영역5</h2>
+		</section>
+	</div>	 -->
 	
+
+	<footer>
+		<div class="copy">
+			<strong class="footer_tit">Contact Us</strong>
+			<ul >
+				<li>
+					
+					<p>Weekday. am10:00 - pm17:00</p>
+					<p>Lunch Time. pm12:50 - pm14:00</p>
+					<p>Closed. Sat. Sun. Holiday</p>
+					
+				</li>
+				<li>
+					<strong class="footer_tit">Call & Mail</strong>
+					<p><span>010-4060-4927 /</span> <span>ssongmusic@naver.com</span></p>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+
 </body>
 </html>
+
+<!-- <h2 class="hide">광고 영력</h2>
+	<a href="#a" class="prev">이전</a>
+	<a href="#a" class="next">다음</a>
+
+	<div class="control">
+		<div>
+			<div>
+				<a class="play on">시작</a>
+				<a class="pause">일시정지</a>
+			</div>
+
+			<ul>
+				<li class="on"><a href="#">JUSETFOG 배너 설명1</a></li>
+				<li><a href="#">JUSETFOG 배너 설명2</a></li>
+				<li><a href="#">JUSETFOG 배너 설명3</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="con">
+		<div class="slide">
+			<div class="txt">
+				HOT Products<br>
+				Product Quick View
+				<p>The Vaper Expo UK 2019 - Part 2.</p>
+			</div>
+		</div>
+	</div> -->
