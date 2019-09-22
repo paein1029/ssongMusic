@@ -180,11 +180,11 @@ footer ul li p{margin:10px;}
 	}
 }
 @media screen and (max-width: 840px) {
-	header{box-shadow: 0 0 5px rgba(0,0,0,0);background:rgba(255,255,255,1)}
+	/*header{box-shadow: 0 0 5px rgba(0,0,0,0);background:rgba(255,255,255,1)}
 	.gnb{position:relative;transform: translateY(0);top:0;}
 	.gnb > ul > li {display: block;}
 	.gnb > ul > li > a{background:#fff;border-radius: 0;}
-	.visual{padding-top: 220px;}
+	.visual{padding-top: 220px;}*/
 	.content{padding:10px 0;}
 
 }
