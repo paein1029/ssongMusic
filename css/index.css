@@ -154,6 +154,9 @@ input[id="menuicon"]:checked + label span:nth-child(3){
 		top: 0;
 		transform: translateY(50%);
 	}
+	footer{
+		padding:0;
+	}
 }
 
 /*footer*/
