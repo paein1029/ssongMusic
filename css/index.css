@@ -133,7 +133,7 @@ input[id="menuicon"]:checked + label span:nth-child(3){
 
 /*contents*/
 .content{
-	background: #ccc;padding:50px 0;
+	background: #ccc;padding:1px 0;
 }
 .imageContainer{text-align: center;width: 100%}
 .imageContainer > div{display: inline-block;position: relative;
@@ -150,14 +150,19 @@ line-height: 30px;font-size: 12px;opacity:0;}
 
 .img_hide{width:0;padding: 0;transform: scale(0);transition: 0.35s}
 
-/*media*/
+/*introduce*/
+/*.introduce{display:inline-block;position:relative;width: 100%;text-align: center}
+.introduce .inner{color:#fff;background:#282828;padding:100px 35px;}
+.introduce i {font-size:32px;}
+.introduce_tit{font-size:32px;}*/
+
 
 /*footer*/
 footer{display: inline-block;text-align: center;width:100%;}
-footer .copy{color:#fff;background:#282828;padding:35px 35px;}
-footer .footer_tit{display:block;font-size: 24px;margin:10px 0;}
+footer .copy{color:#fff;background:#282828;padding:700px 35px;}
+footer .footer_tit{display:block;font-size: 50px;margin:10px 0;}
 footer ul li{list-style: none;}
-footer ul li p{margin:5px;}
+footer ul li p{margin:10px;}
 
 @media screen and (max-width: 1050px) {
 	header h1{

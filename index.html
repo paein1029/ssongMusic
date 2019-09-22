@@ -38,6 +38,7 @@
 		$('.gnb a').click(function(){
 			$('.gnb a').removeClass("active");
 			$(this).addClass('active');
+			alert("준비중입니다.")
 
 		});
 	});
@@ -56,12 +57,18 @@
 	<h2 class="hide">메인 메뉴</h2>
 	<nav class="gnb">
 		<ul>
-			<li><a href="#content" data-filter="total" class="button active">모두 보기</a></li>
+			<!-- <li><a href="#content" data-filter="total" class="button active">모두 보기</a></li>
 			<li><a href="#content" data-filter="one" class="button">쑥쑥 요리</a></li>
 			<li><a href="#content" data-filter="two" class="button">찾아가는 오감</a></li>
 			<li><a href="#content" data-filter="three" class="button">오감 - 오르프</a></li>
 			<li><a href="#content" data-filter="four" class="button">우크렐레 - 오카리나</a></li>
-			<li><a href="#content" data-filter="five" class="button">세시풍속</a></li>
+			<li><a href="#content" data-filter="five" class="button">세시풍속</a></li> -->
+
+			<li><a href="#copy" data-filter="four" class="button">회사소개</a></li>
+			<li><a href="#copy" data-filter="four" class="button">뮤직스토리</a></li>
+			<li><a href="#copy" data-filter="four" class="button">오르프</a></li>
+			<li><a href="#copy" data-filter="four" class="button">오감놀이</a></li>
+
 		</ul>
 	</nav>
 	<!-- <h2 class="hide">전체 메뉴</h2>
@@ -89,11 +96,13 @@
 
 	
 	<div class="content" id="content">	
+
+
 		<section class="imageContainer">
 			<h2 class="hide">컨텐츠 영역1</h2>
 <!-- 			<h1 class="title">ssong</h1> -->
 			<h2 class="hide">컨텐츠 이미지</h2>
-			<div class="item one">
+			<!-- <div class="item one">
 				<img src="images/visualImg3.jpg" style="max-width: 100%; height: auto;">
 				<div class="txt">
 					 쑥쑥 요리 - 장아찌
@@ -118,108 +127,9 @@
 				<div class="txt">
 					찾아가는 오감
 				</div>
-			</div>
-
-			<div class="item one">
-				<img src="images/visualImg4.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 쑥쑥 요리 - 장아찌
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg5.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					화분 만들기
-				</div>
-			</div>
-
-
-			<div class="item one">
-				<img src="images/visualImg8.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					쑥쑥 요리 - 송편
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg9.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					찾아가는 오감 - 바다
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg10.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 찾아가는 오감 - 공룡
-				</div>
-			</div>
-
-			<div class="item two one three">
-				<img src="images/visualImg11.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					송편
-				</div>
-			</div>
-
-			<div class="item one three">
-				<img src="images/visualImg12.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 요리 - 햄버거
-				</div>
-			</div>
+			</div> -->
 
 			
-
-			<div class="item one three five">
-				<img src="images/visualImg14.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 요리 - 쿠키
-				</div>
-			</div>
-
-			<div class="item one three five">
-				<img src="images/visualImg15.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 요리 - 화분
-				</div>
-			</div>
-
-			<div class="item one three five four">
-				<img src="images/visualImg16.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 요리 - 화분
-				</div>
-			</div>
-
-			<div class="item three one">
-				<img src="images/visualImg17.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 요리 - 파이 
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg18.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 찾아가는 오감 _1
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg19.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 찾아가는 오감 _1
-				</div>
-			</div>
-
-			<div class="item two three">
-				<img src="images/visualImg20.jpg" style="max-width: 100%; height: auto;">
-				<div class="txt">
-					 찾아가는 오감 _2
-				</div>
-			</div>
 
 
 
@@ -231,7 +141,7 @@
 	<footer>
 		<div class="copy">
 			<strong class="footer_tit">Contact Us</strong>
-			<ul >
+			<ul id="copy">
 				<li>
 					
 					<p>Weekday. am10:00 - pm17:00</p>
@@ -241,7 +151,7 @@
 				</li>
 				<li>
 					<strong class="footer_tit">Call & Mail</strong>
-					<p><span>010-8894-3826</span> <span>ssongmusic@naver.com</span></p>
+					<p><span>010-8894-3826</span> <span>jang9811@naver.com</span></p>
 				</li>
 			</ul>
 		</div>
