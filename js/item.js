@@ -24,6 +24,7 @@ $(document).ready(function(){
      	$(this).css("z-index","9999");
          },
      stop: function( event, ui ) {
+	$('.bx-viewport').css("overflow","hidden");     
      	 var el = $(this);
           // console.log(el);
           el.css({
@@ -43,6 +44,7 @@ $(document).ready(function(){
 	    },
 
 	    drop: function( event, ui ) {
+		$('.bx-viewport').css("overflow","hidden");
 	    	$(this).removeClass("hovered"); 
 	    	console.log("drop : "+droptext);
 	    	$(this).find('span').text(droptext);
