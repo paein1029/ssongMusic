@@ -3,15 +3,15 @@
 <head>
 	<title>쏭쏭뮤직</title>
 	<meta charset="utf-8">
-	<meta name="description" content="쏭쏭뮤직,오감,오르프,우크렐레,음악 놀이">
+	<meta name="description" content="쏭쏭뮤직,오감,유아교육기관방문수업,오감체험설치,강사파견,놀이음악,유아감성놀이">
 	<meta name="naver-site-verification" content="b60d2ea132881b2ce53a2fd7f944215546a4251f"/>
 	<!-- <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" name="viewport"> -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <!-- <script  src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-	<script  src="https://code.jquery.com/jquery-3.4.0.js"></script>
-	<link href="js/main.js">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
 	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	<script>
@@ -21,19 +21,15 @@
 			autoControls: true,
 			stopAutoOnClick: true,
 			pager: true,
+			
+			
+		    onSliderLoad: function(){
+				alert("loadcomplete");
+				$('#visual').css("opacity", "1");
+			}
 		  });
 
-		$('.button').click( function() {
-			var name = $(this).attr('data-filter');
-			console.log(name);
-			if(name == 'total'){
-				 $( '.item' ).show( 500 );
-			}else{
-				$('.item').not("."+name).hide(500);
-				$('.item').filter("."+name).show(500);
-			}
-			
-		} );
+	
 
 		$('.gnb a').click(function(){
 			$('.gnb a').removeClass("active");
@@ -82,16 +78,15 @@
 	</a> -->
 	</header>
 
-	<section class="visual">
+	<section class="visual" id="visual">
 	<h2 class="hide">광고 영력</h2>
 
-	<div class="slider">
-		<img src="images/song_visual1.jpg">
-		<img src="images/song_visual2.jpg">
-		<img src="images/song_visual1.jpg">
-		<img src="images/song_visual3.jpg">
-	</div>
-	</div>
+		<div class="slider">
+			<img src="images/song_visual1.jpg">
+			<img src="images/song_visual2.jpg">
+			<img src="images/song_visual1.jpg">
+			<img src="images/song_visual3.jpg">
+		</div>
 	</section>	
 
 	
@@ -151,7 +146,7 @@
 				</li>
 				<li>
 					<strong class="footer_tit">Call & Mail</strong>
-					<p><span>010-8894-3826</span> <span>jang9811@naver.com</span></p>
+					<p><span>010-8406-3826</span> <span>jang9811@naver.com</span></p>
 				</li>
 			</ul>
 		</div>
