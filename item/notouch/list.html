@@ -1,63 +1,652 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>쏭쏭 교육 리스트</title>
+   <title>쏭쏭 교육 리스트</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
-<script src="../../js/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/list.css">
 
-	<script src="../../js/jquery-ui.min.js"></script>
-	<script src="../../js/jquery.ui.touch-punch.min.js"></script>
-	<link rel="stylesheet" href="../../css/itmeList.css">
-	
+    <!-- Demo styles -->
+    <style>
+
+    </style>
+
 </head>
 <body>
-	<header>
-		<h1>쏭쏭 교육 리스트</h1>	
-	</header>
-	<section class="dragList">
-		<h2 class="hide">교육 목록</h2>
-		<div class="item">
-			<ul class="itemlist">
-				<li class="drag"><img src="../../images/img1.jpg"><span>세시풍속</span></li>
-			    <li class="drag"><img src="../../images/img2.jpg"><span>오감</span></li>
-			    <li class="drag"><img src="../../images/img3.jpg"><span>오르프</span></li>
-			    <li class="drag"><img src="../../images/img4.jpg"><span>요리</span></li>
-			    <li class="drag"><img src="../../images/img5.jpg"><span>우크렐레</span></li>
-			    <li class="drag"><img src="../../images/img6.jpg"><span>오감방</span></li>
-			    <li class="drag"><img src="../../images/img7.jpg"><span>오감방2</span></<span></li>
-			</ul>  
-
-		</div>
-
-
-		<h2 class="hide">월간 계획</h2>
-		
-		<div class="pushList">
-			<div class="oneWeeek droppable">1주차 : <span>요리수업</span></div>
-			<div class="twoWeeek droppable">2주차 : <span>세시풍속</span></div>
-			<div class="threeWeeek droppable">3주차 : <span>오감</span></div>
-			<div class="fourWeeek droppable">4주차 : <span>오르프</span></div>
-			<div class="bonusWeeek droppable"><span> 보너스</span></div>
-		</div>
-	</section>
-	
-
-	<!-- <footer>
-		<div class="copy">
-			<ul id="copy">
-				<li>
-					<strong class="footer_tit">고객문의</strong>
-					<p><span>010-8894-3826</span> <span><a href="mailto:jang9811@naver.com">jang9811@naver.com</a></span></p>
-				</li>
+<div class="wrap">
+	<div class="topContainer">
+		<div class="menu">
+					
+			<ul>
+				<li>1nd week</li>
+				<li>2nd week</li>
+				<li>3nd week</li>
+				<li>4nd week</li>
+				<li>BONUS</li>
 			</ul>
 		</div>
 
-	</footer> -->
+		<div class="close">
+			<span></span>
+			<span></span>
+		
+			<div class="cart">
+			</div>
+			<div class="refresh">
+			</div>
+			
+		</div>
+	<div class="selectView">
+		<!-- 1주차 div -->
+		<div class="oneWeek swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img1.jpg" />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>세시풍속</p>
+					    </div>
+					  </figcaption>
+				</div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img2.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방1</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img3.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방2</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img4.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+					<figure class="imgPannel">
+					  <img src="../../images/img5.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>우크렐레</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img6.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>요리</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
 
-	<script type="text/javascript" src="../../js/item.js"></script>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img7.jpg" \ />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오르프</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	    </div>
+
+
+	    <!-- 2주차 div -->
+
+	    <div class="twoWeek swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img1.jpg" />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>세시풍속</p>
+					    </div>
+					  </figcaption>
+				</div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img2.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방1</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img3.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방2</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img4.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+					<figure class="imgPannel">
+					  <img src="../../images/img5.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>우크렐레</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img6.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>요리</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img7.jpg" \ />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오르프</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	        </div>
+	       <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+
+	    </div>
+
+
+	    <!-- 3주차 div -->
+	    <div class="threeWeek swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img1.jpg" />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>세시풍속</p>
+					    </div>
+					  </figcaption>
+				</div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img2.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방1</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img3.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방2</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img4.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+					<figure class="imgPannel">
+					  <img src="../../images/img5.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>우크렐레</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img6.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>요리</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img7.jpg" \ />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오르프</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+
+	    </div>
+
+	    <!-- 4주차 div -->
+	    <div class="fourWeek swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img1.jpg" />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>세시풍속</p>
+					    </div>
+					  </figcaption>
+				</div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img2.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방1</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img3.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방2</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img4.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+					<figure class="imgPannel">
+					  <img src="../../images/img5.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>우크렐레</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img6.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>요리</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img7.jpg" \ />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오르프</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	      
+	    </div>
+
+
+	    <!-- 보너스주차 div -->
+	    <div class="bonusWeek swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img1.jpg" />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>세시풍속</p>
+					    </div>
+					  </figcaption>
+				</div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img2.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방1</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img3.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감방2</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img4.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오감</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+					<figure class="imgPannel">
+					  <img src="../../images/img5.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>우크렐레</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img6.jpg"  />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>요리</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	            <div class="swiper-slide">
+	            	<figure class="imgPannel">
+					  <img src="../../images/img7.jpg" \ />
+					  <figcaption>
+					    <div class="heading">
+					      <h3>Ssong <span> Music</span></h3>
+					    </div>
+					    <div class="caption">
+					      <p>오르프</p>
+					    </div>
+					  </figcaption>
+					  <a href="#"></a>
+					</figure>
+
+	            </div>
+	        </div>
+	       <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	       
+	    </div>
+
+   
+    </div>
+     <video id='video' controls="controls" preload='none'
+        width="80%" poster="http://media.w3.org/2010/05/sintel/poster.png">
+        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'/>
+     </video> 
+
+    <h1>쏭쏭뮤직 교육 일정</h1>
+		<div class="viewList">
+
+				<div> <img src="../../images/img1.jpg" />
+					<span>
+						1WEEK
+						<p>세시풍속</p>
+					</span>
+				</div>
+				<div> <img src="../../images/img3.jpg"  />
+					<span>
+						2WEEK
+						<p>오감방2</p>
+					</span>
+				</div>
+				<div> <img src="../../images/img4.jpg" />
+					<span>
+						3WEEK
+						<p>오감</p>
+					</span>
+				</div>
+				<div> <img src="../../images/img5.jpg" />
+					<span>
+						4WEEK
+						<p>우크렐레</p>
+					</span>
+				</div>
+				<div> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample21.jpg" alt="sample22" />
+					<span>
+						BONUS
+						<p>---</p>
+					</span>
+				</div>
+		</div>
+
+
+</div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/list.js"></script>
+    <!-- Initialize Swiper -->
 </body>
 </html>
