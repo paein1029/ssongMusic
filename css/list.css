@@ -30,7 +30,7 @@ font-weight: bold;}
 
 /*close*/
 .topContainer .close{display: none;position:absolute;width:20px;height:20px;
-	cursor: pointer;top:60px;left: 50%;transform: translateX(-120%);z-index: 99999;}
+	cursor: pointer;top:60px;left: 50%;transform: translateX(-250%);z-index: 99999;}
 .topContainer .close > span{display: block;position:absolute;width: 100%;
 	height: 2px;background: #fff;}
 .topContainer .close > span:nth-child(1){top:10px;
@@ -39,11 +39,11 @@ font-weight: bold;}
 	transform: rotate(-45deg);}	
 .topContainer .close .cart{display: none;}		
 .topContainer .close .cart:after{position: absolute;content: '\e9fc';font-family: 'xeicon';
-font-size: 20px;top:2px;color: #fff;cursor: pointer;left:0;transform: translateX(25px);
+font-size: 20px;top:2px;color: #fff;cursor: pointer;left:0;transform: translateX(45px);
 z-index: 99999;}
 .topContainer .close .refresh{display: none;}
 .topContainer .close .refresh:after{position: absolute;content: '\e973';font-family: 'xeicon';
-font-size: 20px;top:2px;color: #fff;cursor: pointer;left:0;transform: translateX(50px);
+font-size: 20px;top:2px;color: #fff;cursor: pointer;left:0;transform: translateX(90px);
 z-index: 99999;}
 
 
