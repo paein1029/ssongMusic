@@ -27,8 +27,8 @@ $(document).ready(function(){
       	}
     });
     var closeContainer = $('.topContainer .close');
-    var cartPush =$('.topContainer .close .cart');
-    var refresh = $('.topContainer .close .refresh');
+    var cartPush =$('.topContainer  .cart');
+    var refresh = $('.topContainer  .reload');
 	//////////////////////////////////////// 
 	var menu = $('.topContainer .menu ul li');
 	
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 	});
 	//close btn
-	var closeBtn =  $('.topContainer .close > span');
+	var closeBtn =  $('.topContainer .close span');
 	closeBtn.on('click',function(e){
 		e.preventDefault();
 		closeFn();
