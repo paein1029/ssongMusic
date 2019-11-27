@@ -24,11 +24,7 @@ $(document).ready(function(){
      	$(this).css("z-index","9999");
          },
      stop: function( event, ui ) {
-<<<<<<< HEAD
      	$('.bx-viewport').css("overflow","hidden");
-=======
-	$('.bx-viewport').css("overflow","hidden");     
->>>>>>> bb9e895fba0944235438557dab4051c718ff1011
      	 var el = $(this);
           // console.log(el);
           el.css({
@@ -48,11 +44,7 @@ $(document).ready(function(){
 	    },
 
 	    drop: function( event, ui ) {
-<<<<<<< HEAD
 	    	$('.bx-viewport').css("overflow","hidden");
-=======
-		$('.bx-viewport').css("overflow","hidden");
->>>>>>> bb9e895fba0944235438557dab4051c718ff1011
 	    	$(this).removeClass("hovered"); 
 	    	console.log("drop : "+droptext);
 	    	$(this).find('span').text(droptext);

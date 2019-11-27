@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style type="text/css">
+		
+		.wrap{background: #ffcc66;margin:5px auto;text-align: center;}
+		.itemlist{display: flex;color: #fff;justify-content: center;
+			text-align: center;flex-wrap: wrap;}
+		.itemlist > div{position: relative;border: 1px solid #000;overflow: hidden;cursor: pointer;}
+
+		.itemlist > div img{min-width: 220px; max-width: 310px;max-height: 220px;width: 100%;
+transition: all 0.45s ease-in-out;margin: 5px;overflow: hidden;}
+		.itemlist .overlay{position: absolute;left: 0;top: 0;width: 100%;}
+
+		.itemlist h2 {
+		  text-align: center;
+		  position: relative;
+		  font-size: 17px;
+		  padding: 10px;
+		  background: rgba(0, 0, 0, 0.6);
+		}
+
+		.itemList > div:hover img {
+			  opacity: 0.35;transform: scale(1.5);
+		}
+
+
+		.resultBtn{display: inline-block;background: #666;color: #fff;padding: 20px;margin:10px;font-size:12px;cursor: pointer;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="itemlist">
+			<div>
+				<img src="../../images/img1.jpg"/>
+				<div class="overlay">
+	                <h2>1</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+
+
+			<div>
+				<img src="../../images/img2.jpg"/>
+				<div class="overlay">
+	                <h2>2</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+
+
+			<div>
+				<img src="../../images/img3.jpg"/>
+				<div class="overlay">
+	                <h2>3</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+
+
+			<div>
+				<img src="../../images/img4.jpg"/>
+				<div class="overlay">
+	                <h2>4</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+			<div><img src="../../images/img5.jpg"/>
+				<div class="overlay">
+	                <h2>5</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+			<div>
+				<img src="../../images/img6.jpg"/>
+				<div class="overlay">
+	                <h2>1</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+			<div>
+				<img src="../../images/img7.jpg"/>
+				<div class="overlay">
+	                <h2>7</h2>
+					<p>
+						<a href="#">LINK HERE</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="resultBtn">
+			Result
+		</div>
+	</div>
+</body>
+</html>
